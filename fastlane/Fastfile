@@ -1,0 +1,10 @@
+lane :test do
+  create_dmg(
+    source: 'fastlane'
+  )
+  update_dmg(
+    source: 'lib/fastlane',
+    template: 'fastlane.dmg',
+    output_filename: 'fastlane2.dmg'
+  )
+end
