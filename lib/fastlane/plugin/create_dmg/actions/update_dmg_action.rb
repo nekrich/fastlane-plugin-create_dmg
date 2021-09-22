@@ -10,9 +10,9 @@ module Fastlane
       UPDATE_DMG_OUTPUT_PATH = :UPDATE_DMG_OUTPUT_PATH
     end
 
-    UI = FastlaneCore::UI
-
     class UpdateDmgAction < Action
+      UI = FastlaneCore::UI
+
       def self.run(params)
         helper = Fastlane::Helper::UpdateDmgHelper.new(params: params)
 

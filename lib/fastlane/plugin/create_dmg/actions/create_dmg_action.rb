@@ -10,9 +10,9 @@ module Fastlane
       CREATE_DMG_OUTPUT_PATH = :CREATE_DMG_OUTPUT_PATH
     end
 
-    UI = FastlaneCore::UI
-
     class CreateDmgAction < Action
+      UI = FastlaneCore::UI
+
       def self.run(params)
         helper = Fastlane::Helper::CreateDmgHelper.new(params: params)
 
